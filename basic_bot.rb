@@ -2,11 +2,11 @@ require 'nutella_lib'
 
 
 # Parse command line arguments
-run_id, broker = nutella.parse_args ARGV
+broker, app_id, run_id = nutella.parse_run_component_args ARGV
 # Extract the component_id
 component_id = nutella.extract_component_id
 # Initialize nutella
-nutella.init( run_id, broker, component_id)
+nutella.init(broker, app_id, run_id, component_id)
 # (Optional) Set the resourceId
 nutella.set_resource_id 'my_resource_id'
 
@@ -20,6 +20,7 @@ puts "Hi, I'm a basic ruby bot and your code should go here!"
 
 
 # 0. Accessing properties exposed by nutella library
+# puts nutella.app_id
 # puts nutella.run_id
 # puts nutella.component_id
 # puts nutella.resource_id
