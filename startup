@@ -10,4 +10,4 @@ BASEDIR=$(dirname $0)
 
 # Start your bot here with something like (example in ruby):
 # ruby $BASEDIR/my_bot.rb $1 $2 $3
-ruby $BASEDIR/basic_bot.rb $1 $2
+ruby $BASEDIR/basic_bot.rb $1 $2 $3
