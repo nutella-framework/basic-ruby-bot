@@ -2,7 +2,7 @@ require 'nutella_lib'
 
 
 # Parse command line arguments
-broker, app_id, run_id = nutella.parse_run_component_args ARGV
+broker, app_id, run_id = nutella.parse_args ARGV
 # Extract the component_id
 component_id = nutella.extract_component_id
 # Initialize nutella
